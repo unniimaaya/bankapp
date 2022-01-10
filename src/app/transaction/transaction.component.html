@@ -1,0 +1,30 @@
+<p>transaction works!</p>
+
+
+   <h2> Transaction details</h2>
+<table  id="one"   class="table  table-primary" >
+    <thead>
+      <tr>
+        <th scope="col">Sl.No</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Type</th>
+        <!-- <th scope="col">Handle</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor ="let transaction of transactions; let i=index">
+        <th>{{i+1}}</th>
+        <th scope="row">{{transaction.amount}}</th>
+        <th scope="row">{{transaction.type}}</th>
+      
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <a routerLink="/dashboard"> Home</a>
+
+
+  <!-- 
+    create package json - npm init
+   -->
